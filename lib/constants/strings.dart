@@ -15,5 +15,13 @@ class Strings {
   static const String install = "Install";
   static const String app = "App";
   static const String conclusion = "Conclusion";
+
+  // source alertdialog
+  static const String sourceAlertTitle = "Source";
+  static const String sourceAlertTextOne = "Do you want to go to the page:";
+  static const String sourceAlertTextTwo = "";
+  static const String sourceAlertNo = "No";
+  static const String sourceAlertYes = "Got to page";
+  
  
 }

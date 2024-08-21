@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:seminar_app/constants/strings.dart';
 import 'package:seminar_app/features/content/widgets/content_cards.dart';
-
+import 'package:seminar_app/utils/alertdialog_source.dart';
 
 
 class ContentList extends StatelessWidget {
@@ -17,8 +17,9 @@ class ContentList extends StatelessWidget {
           ContentCards(
             content: Strings.intro,
             fittingIcon: Icons.question_mark,
-            tapMe: () {
-              Navigator.of(context).pushNamed("/intro");
+            tapMe: () {              
+              showDialog(context: context, builder: (BuildContext context) { return const AlertdialogSource(source: "https://www.flutter.dev/");});
+              //Navigator.of(context).pushNamed("/intro");
             },
           ),
           ContentCards(
