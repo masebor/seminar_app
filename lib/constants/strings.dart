@@ -21,7 +21,7 @@ class Strings {
   static const String sourceAlertTextOne = "Do you want to go to the page:";
   static const String sourceAlertTextTwo = "";
   static const String sourceAlertNo = "No";
-  static const String sourceAlertYes = "Got to page";
+  static const String sourceAlertYes = "Go to page";
   
  
 }

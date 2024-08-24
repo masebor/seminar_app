@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:seminar_app/constants/strings.dart';
+import 'package:seminar_app/styles/app_colors.dart';
 import 'package:seminar_app/utils/launch_url.dart';
 
 class AlertdialogSource extends StatelessWidget {
@@ -8,7 +9,8 @@ class AlertdialogSource extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final themeData = Theme.of(context);
+    final themeData = Theme.of(context);   
+    
     return AlertDialog(
       title: const Text(Strings.sourceAlertTitle),
       content:  SingleChildScrollView(
@@ -21,13 +23,13 @@ class AlertdialogSource extends StatelessWidget {
       ),
       actions: <Widget>[
         TextButton(
-          child: const Text(Strings.sourceAlertNo),
+          child: Text(Strings.sourceAlertNo, style: themeData.textTheme.bodyLarge?.copyWith(color: AppColors.disapproveColor),),
           onPressed: () {
             Navigator.of(context).pop();
           },
         ),
         TextButton(
-          child: const Text(Strings.sourceAlertYes),
+          child: Text(Strings.sourceAlertYes,style: themeData.textTheme.bodyLarge?.copyWith(color: AppColors.approveColor),),
           onPressed: () {
             launchInBrowser(Uri.parse(source));
           },
