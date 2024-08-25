@@ -3,27 +3,27 @@ import 'package:seminar_app/utils/custom_card.dart';
 
 class CustomAnimatedList extends StatefulWidget {
   final String title;
-  final List<CustomCard> oldCustomCardList;
+  final List<CustomCard> sourceList;
   final GlobalKey<AnimatedListState> animatedKey;
-  const CustomAnimatedList({super.key, required this.oldCustomCardList, required this.animatedKey, required this.title});
+  const CustomAnimatedList({super.key, required this.sourceList, required this.animatedKey, required this.title});
 
   @override
   State<CustomAnimatedList> createState() => _CustomAnimatedListState();
 }
 
 class _CustomAnimatedListState extends State<CustomAnimatedList> {
-  bool oldListLengthReached = false;
+  bool sourceListLengthReached = false;
   List<CustomCard> newCustomAnimatedList = [];
 
   void addListItem() {
     final newIndex = newCustomAnimatedList.length;
 
     // next increment -> max is reached
-    if (newIndex == widget.oldCustomCardList.length - 1) {
-      oldListLengthReached = true;
+    if (newIndex == widget.sourceList.length - 1) {
+      sourceListLengthReached = true;
     }
     setState(() {
-      newCustomAnimatedList.add(widget.oldCustomCardList[newIndex]);
+      newCustomAnimatedList.add(widget.sourceList[newIndex]);
     });
     widget.animatedKey.currentState?.insertItem(newIndex);
   }
@@ -39,19 +39,24 @@ class _CustomAnimatedListState extends State<CustomAnimatedList> {
   Widget build(BuildContext context) {
     final themeData = Theme.of(context);
     return Scaffold(
-      appBar: AppBar(
-        centerTitle: true,
+      appBar: AppBar(        
         title: Text(
           widget.title,
         ),
+        centerTitle: true,
+        backgroundColor: themeData.appBarTheme.backgroundColor,
+        titleTextStyle: themeData.textTheme.displayLarge,
       ),
-      body: AnimatedList(
-        key: widget.animatedKey,
-        itemBuilder: (context, index, animation) {
-          return buildItem(newCustomAnimatedList[index], animation);
-        },
+      body: Padding(
+        padding: const EdgeInsets.all(28.0),
+        child: AnimatedList(
+          key: widget.animatedKey,
+          itemBuilder: (context, index, animation) {
+            return buildItem(newCustomAnimatedList[index], animation);
+          },
+        ),
       ),
-      floatingActionButton: oldListLengthReached
+      floatingActionButton: sourceListLengthReached
           ? Container()
           : FloatingActionButton(
               foregroundColor: themeData.colorScheme.primary,
