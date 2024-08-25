@@ -18,12 +18,15 @@ class Strings {
 
   // source alertdialog
   static const String sourceAlertTitle = "Source";
-  static const String sourceAlertTextOne = "Do you want to go to the page:";
+  static const String sourceAlertTextOne = "Willst du den Link zur Quelle aufrufen?";
   static const String sourceAlertTextTwo = "";
-  static const String sourceAlertNo = "No";
-  static const String sourceAlertYes = "Go to page";
-  static const String sourceAlertTooltipp = "Research source";
+  static const String sourceAlertNo = "Nein";
+  static const String sourceAlertYes = "Ja";
+  static const String sourceAlertTooltipp = "Quellenlink";
 
-  
- 
+  // bottom NavigationBar
+
+  static const String bottomNavBarContent = "Content";
+  static const String bottomNavBarAvionik = "Avionik Devices";
+  static const String bottomNavBarSources = "Quellen";
 }
