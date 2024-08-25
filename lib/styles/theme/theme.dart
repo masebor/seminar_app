@@ -42,17 +42,17 @@ class AppTheme {
       color: AppColors.appbarColorLight,
       iconTheme: IconThemeData(color: AppColors.iconColorLight),
     ),
-    colorScheme: ColorScheme.light(
+    colorScheme: const ColorScheme.light(
       primary: AppColors.primaryColorLight,
       onPrimary: AppColors.onPrimaryColorLight,
       secondary: AppColors.secondaryColorLight,
       primaryContainer: AppColors.primaryVariantColorLight,
     ),
     bottomNavigationBarTheme: const BottomNavigationBarThemeData(
-      backgroundColor: AppColors.appbarColorLight,
+      backgroundColor: AppColors.bottomNavBarColorLight,
       selectedItemColor: AppColors.selectedItemColorLight,
     ),
-    textTheme: lightTextTheme,
+    textTheme: lightTextTheme, 
   );
 
   static final ThemeData darkTheme = ThemeData(
@@ -61,14 +61,14 @@ class AppTheme {
       color: AppColors.appbarColorDark,
       iconTheme: IconThemeData(color: AppColors.iconColorDark),
     ),
-    colorScheme: ColorScheme.dark(
+    colorScheme: const ColorScheme.dark(
       primary: AppColors.primaryColorDark,
       secondary: AppColors.secondaryColorDark,
       onPrimary: AppColors.onPrimaryColorDark,
       primaryContainer: AppColors.primaryVariantColorDark,
     ),
     bottomNavigationBarTheme: const BottomNavigationBarThemeData(
-      backgroundColor: AppColors.appbarColorDark,
+      backgroundColor: AppColors.bottomNavBarColorDark,
       selectedItemColor: AppColors.selectedItemColorDark,
     ),
     textTheme: darkTextTheme,

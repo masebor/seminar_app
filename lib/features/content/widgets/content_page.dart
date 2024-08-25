@@ -43,6 +43,7 @@ class _ContentPageState extends State<ContentPage> {
         },
         indicatorColor: themeData.bottomNavigationBarTheme.selectedItemColor,
         selectedIndex: currentPageIndex,
+        backgroundColor: themeData.bottomNavigationBarTheme.backgroundColor,
         destinations: const [
           NavigationDestination(
             icon: Icon(Icons.home),

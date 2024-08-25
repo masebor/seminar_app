@@ -37,6 +37,7 @@ class _CustomAnimatedListState extends State<CustomAnimatedList> {
 
   @override
   Widget build(BuildContext context) {
+    final themeData = Theme.of(context);
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
@@ -46,7 +47,6 @@ class _CustomAnimatedListState extends State<CustomAnimatedList> {
       ),
       body: AnimatedList(
         key: widget.animatedKey,
-        // initialItemCount: 1,
         itemBuilder: (context, index, animation) {
           return buildItem(newCustomAnimatedList[index], animation);
         },
@@ -54,6 +54,8 @@ class _CustomAnimatedListState extends State<CustomAnimatedList> {
       floatingActionButton: oldListLengthReached
           ? Container()
           : FloatingActionButton(
+              foregroundColor: themeData.colorScheme.primary,
+              backgroundColor: themeData.colorScheme.secondary,
               onPressed: addListItem,
               child: const Icon(Icons.add),
             ),
