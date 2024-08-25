@@ -1,14 +1,30 @@
 import 'package:seminar_app/utils/custom_card.dart';
 
-
 class SourceUrlLists {
-
-    static final List<CustomCard> oldIntroList = [
-    const CustomCard(content: "Android", source: "https://www.android.com/"),
-    const CustomCard(content: "iOS", source: "https://www.apple.com/de/ios/"),
-    const CustomCard(
-        content: "long Html",
-        source:
-            "https://www.google.com/search?q=how+to+make+text+selectable+influtter&client=firefox-b-d&sca_esv=33b519b0d73ed9c3&sca_upv=1&ei=DuLJZrbaEOKhi-gPzoDhyAM&ved=0ahUKEwi2mdns342IAxXi0AIHHU5AGDkQ4dUDCA8&uact=5&oq=how+to+make+text+selectable+influtter&gs_lp=Egxnd3Mtd2l6LXNlcnAiJWhvdyB0byBtYWtlIHRleHQgc2VsZWN0YWJsZSBpbmZsdXR0ZXIyCRAAGIAEGBMYDTIIEAAYgAQYogQyCBAAGIAEGKIESOwKUO8CWIcKcAF4AZABAJgBf6ABsAWqAQM1LjK4AQPIAQD4AQGYAgegAukEwgIKEAAYsAMY1gQYR8ICBRAhGKABwgIIEAAYCBgNGB6YAwCIBgGQBgiSBwM1LjKgB8QU&sclient=gws-wiz-serp"),
+  static final List<CustomCard> sourceIntroList = [
+    const CustomCard(content: "Android", source: "https://docs.flutter.dev/platform-integration/android/install-android"),
+    const CustomCard(content: "Web", source: "https://docs.flutter.dev/platform-integration/web/building"),
+    const CustomCard(content: "iOS", source: "https://docs.flutter.dev/platform-integration/ios/install-ios"),
+    const CustomCard(content: "macOS", source: "https://docs.flutter.dev/platform-integration/macos/install-macos"),
+    const CustomCard(content: "Windows", source: "https://docs.flutter.dev/platform-integration/windows/install-windows"),
+    const CustomCard(content: "Linux", source: "https://docs.flutter.dev/platform-integration/linux/install-linux"),
   ];
+
+  static final List<CustomCard> sourceDartList = [
+    const CustomCard(content: "", source: ""),
+  ];
+  static final List<CustomCard> sourceFlutterList = [
+    const CustomCard(content: "", source: ""),
+  ];
+  static final List<CustomCard> sourceInstallList = [
+    const CustomCard(content: "", source: ""),
+  ];
+  static final List<CustomCard> sourceAppList = [
+    const CustomCard(content: "", source: ""),
+  ];
+  static final List<CustomCard> sourceConclusionList = [
+    const CustomCard(content: "", source: ""),
+  ];
+
+
 }

@@ -10,7 +10,7 @@ class IntroPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CustomAnimatedList(
-      oldCustomCardList: SourceUrlLists.oldIntroList,
+      oldCustomCardList: SourceUrlLists.sourceIntroList,
       animatedKey: GlobalAnimatedKeys.introPageKey,
       title: Strings.intro,
     );
