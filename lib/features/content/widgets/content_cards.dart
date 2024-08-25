@@ -17,7 +17,7 @@ class ContentCards extends StatelessWidget {
         onTap: tapMe,
         leading: Text(
           content,
-          style: TextStyle(fontSize: themeData.textTheme.displayLarge?.fontSize),
+          style: themeData.textTheme.displayLarge,
         ),
         trailing: Icon(fittingIcon,),
         textColor: themeData.colorScheme.onPrimary,

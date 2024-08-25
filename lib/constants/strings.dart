@@ -22,6 +22,8 @@ class Strings {
   static const String sourceAlertTextTwo = "";
   static const String sourceAlertNo = "No";
   static const String sourceAlertYes = "Go to page";
+  static const String sourceAlertTooltipp = "Research source";
+
   
  
 }

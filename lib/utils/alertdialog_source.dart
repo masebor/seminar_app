@@ -17,7 +17,7 @@ class AlertdialogSource extends StatelessWidget {
         child: ListBody(
           children: <Widget>[
             Text(Strings.sourceAlertTextOne, style: themeData.textTheme.bodyLarge,),
-            Text(Strings.sourceAlertTextTwo, style: themeData.textTheme.bodyLarge,),
+            SelectionArea(child: Text(source, style: themeData.textTheme.bodyLarge,)),
           ],
         ),
       ),
