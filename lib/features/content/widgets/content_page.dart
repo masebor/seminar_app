@@ -22,7 +22,9 @@ class _ContentPageState extends State<ContentPage> {
     return Scaffold(
       appBar: AppBar(
         title: const Text(Strings.contentTitle),
+        centerTitle: true,
         backgroundColor: themeData.appBarTheme.backgroundColor,
+        titleTextStyle: themeData.textTheme.displayLarge,
         actions: [
           Tooltip(
             message: isDarkModeOn ? Strings.switchLight : Strings.switchDark,
@@ -51,9 +53,10 @@ class _ContentPageState extends State<ContentPage> {
             label: Strings.bottomNavBarContent,
           ),
           NavigationDestination(
-              icon: Icon(Icons.airplanemode_active),
-              selectedIcon: Icon(Icons.airplane_ticket_outlined),
-              label: Strings.bottomNavBarAvionik),
+            icon: Icon(Icons.airplanemode_active),
+            selectedIcon: Icon(Icons.airplane_ticket_outlined),
+            label: Strings.bottomNavBarAvionik,
+          ),
           NavigationDestination(
             icon: Icon(Icons.source),
             selectedIcon: Icon(Icons.book),

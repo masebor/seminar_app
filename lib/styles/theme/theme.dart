@@ -52,7 +52,10 @@ class AppTheme {
       backgroundColor: AppColors.bottomNavBarColorLight,
       selectedItemColor: AppColors.selectedItemColorLight,
     ),
-    textTheme: lightTextTheme, 
+    textTheme: lightTextTheme,
+    hoverColor: AppColors.secondaryColorLight,
+    focusColor: AppColors.secondaryColorLight,
+    highlightColor: AppColors.secondaryColorLight,
   );
 
   static final ThemeData darkTheme = ThemeData(
@@ -72,5 +75,8 @@ class AppTheme {
       selectedItemColor: AppColors.selectedItemColorDark,
     ),
     textTheme: darkTextTheme,
+    hoverColor: AppColors.secondaryColorDark,
+    focusColor: AppColors.secondaryColorDark,
+    highlightColor: AppColors.secondaryColorDark,
   );
 }

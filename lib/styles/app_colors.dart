@@ -7,7 +7,7 @@ class AppColors {
   static const Color primaryVariantColorLight = Color.fromARGB(255, 55, 71, 79);
   static const Color onPrimaryColorLight = Color.fromARGB(255, 120, 144, 156);
   static const Color secondaryColorLight = Color.fromARGB(255, 156, 46, 175);
-  static const Color textColorPrimaryLight = Colors.black;
+  static const Color textColorPrimaryLight = Color.fromARGB(255, 20, 19, 19);
   static const Color appbarColorLight = Color.fromARGB(255, 156, 46, 175);
   static const Color bottomNavBarColorLight = Color.fromARGB(255, 206, 193, 210);
 
