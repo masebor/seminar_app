@@ -49,6 +49,8 @@ class Strings {
   static const String howToBuildApp = "Flutter Grundlagen";
 
   //flutter info
-
   static const String flutterInfoMVVM = "MVVM";
+
+  //Image loading from Url
+  static const String imageLoadingError = "Das Bild konnte nicht geladen werden!";
 }

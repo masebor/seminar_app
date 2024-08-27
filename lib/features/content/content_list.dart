@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:seminar_app/constants/strings.dart';
-import 'package:seminar_app/features/content/widgets/content_cards.dart';
+import 'package:seminar_app/features/content/content_cards.dart';
 
 class ContentList extends StatelessWidget {
   const ContentList({super.key});

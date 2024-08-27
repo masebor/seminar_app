@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:seminar_app/features/intro/widgets/intro_page.dart';
+import 'package:seminar_app/features/intro/intro_page.dart';
 
 class IntroScreen extends StatelessWidget {
   const IntroScreen({super.key});

@@ -18,7 +18,7 @@ class SourceUrlLists {
     const CustomCard(
       content: Strings.flutterInfoMVVM,
       source: "https://de.wikipedia.org/wiki/Model_View_ViewModel#",
-      pathString: "https://upload.wikimedia.org/wikipedia/commons/8/87/MVVMPattern.png",
+      pathString: "https://upload.wikimedia.org/wikipedia/commons/8/87/MVVMPattern.png",      
     ),
   ];
   static final List<CustomCard> sourceConclusionList = [

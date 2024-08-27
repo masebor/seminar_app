@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:seminar_app/features/avionik_devices/widgets/avionik_devices_page.dart';
+import 'package:seminar_app/features/avionik_devices/avionik_devices_page.dart';
 
 
 

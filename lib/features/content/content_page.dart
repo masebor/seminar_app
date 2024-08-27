@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:seminar_app/constants/strings.dart';
-import 'package:seminar_app/features/avionik_devices/widgets/avionik_devices_page.dart';
-import 'package:seminar_app/features/content/widgets/content_list.dart';
-import 'package:seminar_app/features/sources/widgets/sources_page.dart';
+import 'package:seminar_app/features/avionik_devices/avionik_devices_page.dart';
+import 'package:seminar_app/features/content/content_list.dart';
+import 'package:seminar_app/features/sources/sources_page.dart';
 import 'package:seminar_app/styles/theme/application/theme_bloc.dart';
 
 class ContentPage extends StatefulWidget {

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:seminar_app/features/conclusion/widgets/conclusion_page.dart';
+import 'package:seminar_app/features/conclusion/conclusion_page.dart';
 
 
 class ConclusionScreen extends StatelessWidget {

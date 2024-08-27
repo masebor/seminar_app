@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:seminar_app/features/avionik_devices/widgets/avionik_devices_button.dart';
+import 'package:seminar_app/features/avionik_devices/avionik_devices_button.dart';
 
 class AvionikDevicesPage extends StatelessWidget {
   const AvionikDevicesPage({super.key});

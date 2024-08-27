@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:seminar_app/features/dart_info/widgets/dart_info_page.dart';
+import 'package:seminar_app/features/dart_info/dart_info_page.dart';
 
 
 class DartInfoScreen extends StatelessWidget {

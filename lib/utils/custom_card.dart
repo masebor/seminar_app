@@ -34,7 +34,8 @@ class CustomCard extends StatelessWidget {
           mainAxisSize: MainAxisSize.min,
           children: [
             pathString != null
-                ? IconButton(tooltip: Strings.sourceAlertPicture,
+                ? IconButton(
+                    tooltip: Strings.sourceAlertPicture,
                     onPressed: () async {
                       await showDialog(
                         context: context,
@@ -46,17 +47,18 @@ class CustomCard extends StatelessWidget {
                     icon: const Icon(Icons.photo))
                 : Container(),
             IconButton(
-                tooltip: Strings.sourceAlertSourceLink,
-                onPressed: () {
-                  showDialog(
-                      context: context,
-                      builder: (BuildContext context) {
-                        return AlertdialogSource(source: source);
-                      });
-                },
-                icon: const Icon(
-                  Icons.source,
-                )),
+              tooltip: Strings.sourceAlertSourceLink,
+              onPressed: () {
+                showDialog(
+                    context: context,
+                    builder: (BuildContext context) {
+                      return AlertdialogSource(source: source);
+                    });
+              },
+              icon: const Icon(
+                Icons.source,
+              ),
+            ),
           ],
         ),
         textColor: themeData.colorScheme.onPrimary,
