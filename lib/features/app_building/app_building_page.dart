@@ -7,6 +7,6 @@ class AppBuildingPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const CustomPlayPage(title: Strings.app, content: Strings.howToBuildApp);
+    return const CustomPlayPage(appBartitle: Strings.contentApp, content: Strings.howToBuildApp);
   }
 }

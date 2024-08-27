@@ -16,42 +16,42 @@ class ContentList extends StatelessWidget {
             padding: const EdgeInsets.all(20),
             children: [
               ContentCards(
-                content: Strings.intro,
+                content: Strings.contentIntro,
                 fittingIcon: Icons.question_mark,
                 tapMe: () {
                   Navigator.of(context).pushNamed("/intro");
                 },
               ),
               ContentCards(
-                content: Strings.dartInfo,
+                content: Strings.contentDartInfo,
                 fittingIcon: Icons.border_inner_rounded,
                 tapMe: () {
                   Navigator.of(context).pushNamed("/dart_info");
                 },
               ),
               ContentCards(
-                content: Strings.flutterInfo,
+                content: Strings.contentFlutterInfo,
                 fittingIcon: Icons.now_widgets,
                 tapMe: () {
                   Navigator.of(context).pushNamed("/flutter_info");
                 },
               ),
               ContentCards(
-                content: Strings.install,
+                content: Strings.contentInstall,
                 fittingIcon: Icons.install_desktop,
                 tapMe: () {
                   Navigator.of(context).pushNamed("/install_flutter");
                 },
               ),
               ContentCards(
-                content: Strings.app,
+                content: Strings.contentApp,
                 fittingIcon: Icons.build,
                 tapMe: () {
                   Navigator.of(context).pushNamed("/app_building");
                 },
               ),
               ContentCards(
-                content: Strings.conclusion,
+                content: Strings.contentConclusion,
                 fittingIcon: Icons.key,
                 tapMe: () {
                   Navigator.of(context).pushNamed("/conclusion");

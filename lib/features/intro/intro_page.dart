@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:seminar_app/constants/global_animated_keys.dart';
-import 'package:seminar_app/data/source_url_lists.dart';
+import 'package:seminar_app/data/sourceLists/source_list_intro.dart';
 import 'package:seminar_app/constants/strings.dart';
 import 'package:seminar_app/utils/custom_animated_list.dart';
 
@@ -10,9 +10,9 @@ class IntroPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CustomAnimatedList(
-      sourceList: SourceUrlLists.sourceIntroList,
+      sourceList: SourceListIntro.sourceListIntro,
       animatedKey: GlobalAnimatedKeys.introPageKey,
-      title: Strings.intro,
+      title: Strings.contentIntro,
     );
   }
 }

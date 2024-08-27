@@ -7,6 +7,6 @@ class InstallFlutterPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const CustomPlayPage(title: Strings.install, content: Strings.howToInstall);
+    return const CustomPlayPage(appBartitle: Strings.contentInstall, content: Strings.howToInstall);
   }
 }

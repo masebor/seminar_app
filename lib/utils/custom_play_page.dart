@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:seminar_app/constants/strings.dart';
 
 class CustomPlayPage extends StatelessWidget {
-  final String title;
+  final String appBartitle;
   final String content;
 
   const CustomPlayPage({
     super.key,
-    required this.title,
+    required this.appBartitle,
     required this.content,
   });
 
@@ -18,7 +18,7 @@ class CustomPlayPage extends StatelessWidget {
     final themeData = Theme.of(context);
     return Scaffold(
       appBar: AppBar(
-        title: Text(title),
+        title: Text(appBartitle),
         centerTitle: true,
         backgroundColor: themeData.appBarTheme.backgroundColor,
         titleTextStyle: themeData.textTheme.displayLarge,
