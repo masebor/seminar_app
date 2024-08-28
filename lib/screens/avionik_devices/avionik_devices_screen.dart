@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:seminar_app/features/conclusion/conclusion_page.dart';
+import 'package:seminar_app/features/avionik_devices/avionik_devices_page.dart';
+
 
 
 class ConclusionScreen extends StatelessWidget {
@@ -7,6 +8,6 @@ class ConclusionScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const ConclusionPage();
+    return const AvionikDevicesPage();
   }
 }

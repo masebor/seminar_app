@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:seminar_app/features/app_building/widgets/app_building_page.dart';
+import 'package:seminar_app/features/app_building/app_building_page.dart';
 
 
 class AppBuildingScreen extends StatelessWidget {

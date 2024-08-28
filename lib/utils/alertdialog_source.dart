@@ -16,8 +16,8 @@ class AlertdialogSource extends StatelessWidget {
       content:  SingleChildScrollView(
         child: ListBody(
           children: <Widget>[
-            Text(Strings.sourceAlertTextOne, style: themeData.textTheme.bodyLarge,),
-            Text(Strings.sourceAlertTextTwo, style: themeData.textTheme.bodyLarge,),
+            Text(Strings.sourceAlertTextOne, style: themeData.textTheme.bodyLarge,),            
+            SelectionArea(child: Text(source, style: themeData.textTheme.bodyLarge,)),
           ],
         ),
       ),
@@ -32,6 +32,7 @@ class AlertdialogSource extends StatelessWidget {
           child: Text(Strings.sourceAlertYes,style: themeData.textTheme.bodyLarge?.copyWith(color: AppColors.approveColor),),
           onPressed: () {
             launchInBrowser(Uri.parse(source));
+            Navigator.of(context).pop();
           },
         ),
       ],

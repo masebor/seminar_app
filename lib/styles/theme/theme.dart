@@ -5,14 +5,14 @@ class AppTheme {
   AppTheme._();
 
   static const TextStyle lightHeadingText = TextStyle(
-    color: AppColors.lightTextColorPrimary,
+    color: AppColors.textColorPrimaryLight,
     fontFamily: "Verdana",
     fontSize: 20,
     fontWeight: FontWeight.bold,
   );
 
   static const TextStyle lightBodyText = TextStyle(
-    color: AppColors.lightTextColorPrimary,
+    color: AppColors.textColorPrimaryLight,
     fontFamily: "Verdana",
     fontWeight: FontWeight.bold,
     fontSize: 14,
@@ -24,11 +24,11 @@ class AppTheme {
   );
 
   static final TextStyle darkThemeHeadingTextStyle = lightHeadingText.copyWith(
-    color: AppColors.darkTextColorPrimary,
+    color: AppColors.textColorPrimaryDark,
   );
 
   static final TextStyle darkThemeBodyeTextStyle = lightBodyText.copyWith(
-    color: AppColors.darkTextColorPrimary,
+    color: AppColors.textColorPrimaryDark,
   );
 
   static final TextTheme darkTextTheme = TextTheme(
@@ -37,34 +37,46 @@ class AppTheme {
   );
 
   static final ThemeData lightTheme = ThemeData(
-    scaffoldBackgroundColor: AppColors.lightPrimaryColor,
+    scaffoldBackgroundColor: AppColors.primaryColorLight,
     appBarTheme: const AppBarTheme(
       color: AppColors.appbarColorLight,
       iconTheme: IconThemeData(color: AppColors.iconColorLight),
     ),
-    bottomAppBarTheme: const BottomAppBarTheme(color: AppColors.appbarColorLight),
-    colorScheme: ColorScheme.light(
-      primary: AppColors.lightPrimaryColor,
-      onPrimary: AppColors.lightOnPrimaryColor,
-      secondary: AppColors.accentColorLight,
-      primaryContainer: AppColors.lightPrimaryVariantColor,
+    colorScheme: const ColorScheme.light(
+      primary: AppColors.primaryColorLight,
+      onPrimary: AppColors.onPrimaryColorLight,
+      secondary: AppColors.secondaryColorLight,
+      primaryContainer: AppColors.primaryVariantColorLight,
+    ),
+    bottomNavigationBarTheme: const BottomNavigationBarThemeData(
+      backgroundColor: AppColors.bottomNavBarColorLight,
+      selectedItemColor: AppColors.selectedItemColorLight,
     ),
     textTheme: lightTextTheme,
+    hoverColor: AppColors.secondaryColorLight,
+    focusColor: AppColors.secondaryColorLight,
+    highlightColor: AppColors.secondaryColorLight,
   );
 
   static final ThemeData darkTheme = ThemeData(
-    scaffoldBackgroundColor: AppColors.darkPrimaryColor,
-    appBarTheme: AppBarTheme(
+    scaffoldBackgroundColor: AppColors.primaryColorDark,
+    appBarTheme: const AppBarTheme(
       color: AppColors.appbarColorDark,
-      iconTheme: const IconThemeData(color: AppColors.iconColorDark),
+      iconTheme: IconThemeData(color: AppColors.iconColorDark),
     ),
-    bottomAppBarTheme: BottomAppBarTheme(color: AppColors.appbarColorDark),
-    colorScheme: ColorScheme.dark(
-      primary: AppColors.darkPrimaryColor,
-      secondary: AppColors.accentColorDark,
-      onPrimary: AppColors.darkOnPrimaryColor,
-      primaryContainer: AppColors.darkPrimaryVariantColor,
+    colorScheme: const ColorScheme.dark(
+      primary: AppColors.primaryColorDark,
+      secondary: AppColors.secondaryColorDark,
+      onPrimary: AppColors.onPrimaryColorDark,
+      primaryContainer: AppColors.primaryVariantColorDark,
+    ),
+    bottomNavigationBarTheme: const BottomNavigationBarThemeData(
+      backgroundColor: AppColors.bottomNavBarColorDark,
+      selectedItemColor: AppColors.selectedItemColorDark,
     ),
     textTheme: darkTextTheme,
+    hoverColor: AppColors.secondaryColorDark,
+    focusColor: AppColors.secondaryColorDark,
+    highlightColor: AppColors.secondaryColorDark,
   );
 }

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:seminar_app/features/content/widgets/content_page.dart';
+import 'package:seminar_app/features/content/content_page.dart';
 
 
 class ContentScreen extends StatelessWidget {

@@ -13,13 +13,15 @@ class ContentCards extends StatelessWidget {
       color: themeData.colorScheme.primary,
       margin: const EdgeInsets.all(12),
       elevation: 10,
-      child: ListTile(
+      child: ListTile(        
         onTap: tapMe,
         leading: Text(
           content,
-          style: TextStyle(fontSize: themeData.textTheme.displayLarge?.fontSize),
+          style: themeData.textTheme.displayLarge,
         ),
-        trailing: Icon(fittingIcon,),
+        trailing: Icon(
+          fittingIcon,
+        ),
         textColor: themeData.colorScheme.onPrimary,
       ),
     );

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:seminar_app/features/install_flutter/widgets/install_flutter.dart';
+import 'package:seminar_app/features/install_flutter/install_flutter.dart';
 
 class InstallFlutterScreen extends StatelessWidget {
   const InstallFlutterScreen({super.key});
