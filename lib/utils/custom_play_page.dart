@@ -37,7 +37,10 @@ class CustomPlayPage extends StatelessWidget {
                 child: ListTile(
                   leading: IconButton(
                     tooltip: Strings.playVideo,
-                    onPressed: () {},
+                    onPressed: () {
+                      Future.delayed(const Duration(seconds: 5));
+                      Navigator.of(context).pushNamed("/empty_loading");
+                    },
                     icon: const Icon(
                       Icons.play_arrow,
                     ),

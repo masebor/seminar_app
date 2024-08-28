@@ -14,8 +14,8 @@ class _AvionikDevicesSliderAnimationState extends State<AvionikDevicesSliderAnim
     vsync: this,
   )..repeat(reverse: true);
   late final Animation<Offset> _animationOffset = Tween<Offset>(begin: Offset.zero, end: const Offset(0, 1.5)).animate(CurvedAnimation(
-    parent: _animationController,
-    curve: Curves.easeIn,
+    parent: _animationController,    
+    curve: Curves.easeInCubic,
   ));
 
   @override
@@ -31,16 +31,16 @@ class _AvionikDevicesSliderAnimationState extends State<AvionikDevicesSliderAnim
       child: const Column(
         children: [
           Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [AvionikDevicesButton()],
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [AvionikDevicesButton(), AvionikDevicesButton(), AvionikDevicesButton(), AvionikDevicesButton()],
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [AvionikDevicesButton(), AvionikDevicesButton()],
           ),
           Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [AvionikDevicesButton(), AvionikDevicesButton(), AvionikDevicesButton()],
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [AvionikDevicesButton()],
           ),
         ],
       ),

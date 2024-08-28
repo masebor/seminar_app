@@ -6,6 +6,7 @@ import 'package:seminar_app/screens/dart_info/dart_info_screen.dart';
 import 'package:seminar_app/screens/flutter_info/flutter_info_screen.dart';
 import 'package:seminar_app/screens/install_flutter/install_flutter_screen.dart';
 import 'package:seminar_app/screens/intro/intro_screen.dart';
+import 'package:seminar_app/utils/custom_empty_loading_page.dart';
 
 Map<String, Widget Function(BuildContext)> myRoutes = {
   "/content": (context) => const ContentScreen(),
@@ -15,4 +16,5 @@ Map<String, Widget Function(BuildContext)> myRoutes = {
   "/install_flutter": (context) => const InstallFlutterScreen(),
   "/app_building": (context) => const AppBuildingScreen(),
   "/conclusion": (context) => const ConclusionScreen(),
+  "/empty_loading": (context) => const CustomEmptyLoadingPage(),
 };
