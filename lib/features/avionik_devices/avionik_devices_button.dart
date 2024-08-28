@@ -8,18 +8,21 @@ class AvionikDevicesButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final themeData = Theme.of(context);
-    return IconButton(
-      icon: const Icon(Icons.airplanemode_active),
-      selectedIcon: const Icon(Icons.airplane_ticket_outlined),
-      tooltip: Strings.bottomNavBarAvionik,
-      focusColor: themeData.bottomNavigationBarTheme.selectedItemColor,
-      onPressed: () {
-        showDialog(
-            context: context,
-            builder: (BuildContext context) {
-              return const AlertdialogSource(source: "https://www.youtube.com/info8uniwue");
-            });
-      },
+    return RotatedBox(
+      quarterTurns: 2,
+      child: IconButton(
+        icon: const Icon(Icons.airplanemode_active),
+        selectedIcon: const Icon(Icons.airplane_ticket_outlined),
+        tooltip: Strings.bottomNavBarAvionik,
+        focusColor: themeData.bottomNavigationBarTheme.selectedItemColor,
+        onPressed: () {
+          showDialog(
+              context: context,
+              builder: (BuildContext context) {
+                return const AlertdialogSource(source: "https://www.youtube.com/info8uniwue");
+              });
+        },
+      ),
     );
   }
 }

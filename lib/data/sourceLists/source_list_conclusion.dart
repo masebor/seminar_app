@@ -5,5 +5,8 @@ class SourceListConclusion {
 
     static final List<CustomCard> sourceListConclusion = [
     const CustomCard(title: Strings.conclusionTitleProAndCon, source: ""),
+    const CustomCard(title: Strings.conclusionTitleOpenSource, source: ""),
+    const CustomCard(title: Strings.conclusionTitleOneCode, source: ""),
+    const CustomCard(title: Strings.conclusionTitleFun, source: ""),
   ];
 }

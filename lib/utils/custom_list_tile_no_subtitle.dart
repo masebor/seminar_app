@@ -7,15 +7,14 @@ import 'package:seminar_app/utils/custom_image_dialog.dart';
 class CustomListTileNoSubtitle extends StatelessWidget {
   final String? leading;
   final String title;
-  final String source;
+  final String? source;
   final String? pathString;
   final VoidCallback? tapMe;
-  const CustomListTileNoSubtitle(
-      {super.key, this.leading, required this.title, this.pathString, required this.source, this.tapMe});
+  const CustomListTileNoSubtitle({super.key, this.leading, required this.title, this.pathString, this.source, this.tapMe});
 
   @override
   Widget build(BuildContext context) {
-    final themeData = Theme.of(context); 
+    final themeData = Theme.of(context);
     return ListTile(
       onTap: tapMe,
       onLongPress: () {},
@@ -23,13 +22,13 @@ class CustomListTileNoSubtitle extends StatelessWidget {
       title: Text(
         title,
         style: themeData.textTheme.displayLarge,
-      ),      
+      ),
       trailing: Row(
         mainAxisSize: MainAxisSize.min,
         children: [
           pathString != null
               ? IconButton(
-                  tooltip: Strings.sourceAlertPicture,
+                  tooltip: Strings.sourceAlertImage,
                   onPressed: () async {
                     await showDialog(
                       context: context,
@@ -40,19 +39,19 @@ class CustomListTileNoSubtitle extends StatelessWidget {
                   },
                   icon: const Icon(Icons.photo))
               : Container(),
-          IconButton(
+          checkIfSource(source) ? IconButton(
             tooltip: Strings.sourceAlertSourceLink,
             onPressed: () {
               showDialog(
                   context: context,
                   builder: (BuildContext context) {
-                    return AlertdialogSource(source: source);
+                    return AlertdialogSource(source: source.toString());
                   });
             },
             icon: const Icon(
               Icons.source,
             ),
-          ),
+          ) : Container(),
         ],
       ),
       textColor: themeData.colorScheme.onPrimary,

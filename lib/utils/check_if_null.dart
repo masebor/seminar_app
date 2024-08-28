@@ -5,3 +5,7 @@ String checkIfNullString(String? val) {
     return "";
   }
 }
+
+bool checkIfSource(String? src) {
+  return (src != null) && (src != '');
+}

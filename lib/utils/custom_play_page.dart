@@ -27,8 +27,8 @@ class CustomPlayPage extends StatelessWidget {
         child: Padding(
           padding: const EdgeInsets.all(28.0),
           child: SizedBox(
-            width: screenWidth,
-            height: screenHeight,
+            width: screenWidth * 0.7,
+            height: screenHeight* 0.4,
             child: Card(
               color: themeData.colorScheme.primary,
               margin: const EdgeInsets.all(12),
@@ -37,7 +37,9 @@ class CustomPlayPage extends StatelessWidget {
                 child: ListTile(
                   leading: IconButton(
                     tooltip: Strings.playVideo,
-                    onPressed: () {},
+                    onPressed: () {                      
+                      Navigator.of(context).pushNamed("/empty_loading");
+                    },
                     icon: const Icon(
                       Icons.play_arrow,
                     ),
