@@ -7,7 +7,7 @@ class CustomCard extends StatelessWidget {
   final String title;
   final String? subtitle;
   final String? pathString;
-  final String source;
+  final String? source;
   final VoidCallback? tapMe;
   const CustomCard({
     super.key,
@@ -15,7 +15,7 @@ class CustomCard extends StatelessWidget {
     required this.title,
     this.subtitle,
     this.pathString,
-    required this.source,
+    this.source,
     this.tapMe,
   });
 

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:seminar_app/constants/strings.dart';
 
 class CustomEmptyLoadingPage extends StatelessWidget {
   const CustomEmptyLoadingPage({super.key});
@@ -9,12 +10,16 @@ class CustomEmptyLoadingPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(),
       body: Center(
-        child: SizedBox(
-            width: 20,
-            height: 20,
+        child: Tooltip(
+          message: Strings.emptyToolTipp,
+          child: SizedBox(
+            width: 30,
+            height: 30,
             child: CircularProgressIndicator(
-              color: themData.colorScheme.onPrimary,
-            )),
+                color: themData.colorScheme.onPrimary,
+              ),
+          ),
+        ),
       ),
     );
   }

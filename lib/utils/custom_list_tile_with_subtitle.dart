@@ -8,11 +8,11 @@ class CustomListTileWithSubtitle extends StatelessWidget {
   final String? leading;
   final String title;
   final String? subtitle;
-  final String source;
+  final String? source;
   final String? pathString;
   final VoidCallback? tapMe;
   const CustomListTileWithSubtitle(
-      {super.key, this.leading, required this.title, this.subtitle, this.pathString, required this.source, this.tapMe});
+      {super.key, this.leading, required this.title, this.subtitle, this.pathString, this.source, this.tapMe});
 
   @override
   Widget build(BuildContext context) {
@@ -31,7 +31,7 @@ class CustomListTileWithSubtitle extends StatelessWidget {
         children: [
           pathString != null
               ? IconButton(
-                  tooltip: Strings.sourceAlertPicture,
+                  tooltip: Strings.sourceAlertImage,
                   onPressed: () async {
                     await showDialog(
                       context: context,
@@ -42,20 +42,20 @@ class CustomListTileWithSubtitle extends StatelessWidget {
                   },
                   icon: const Icon(Icons.photo))
               : Container(),
-          IconButton(
+          checkIfSource(source) ? IconButton(
             tooltip: Strings.sourceAlertSourceLink,
             onPressed: () {
               showDialog(
                 context: context,
                 builder: (BuildContext context) {
-                  return AlertdialogSource(source: source);
+                  return AlertdialogSource(source: source.toString());
                 },
               );
             },
             icon: const Icon(
               Icons.source,
             ),
-          ),
+          ) : Container(),
         ],
       ),
       textColor: themeData.colorScheme.onPrimary,
