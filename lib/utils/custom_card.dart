@@ -5,7 +5,7 @@ import 'package:seminar_app/utils/custom_list_tile_with_subtitle.dart';
 class CustomCard extends StatelessWidget {
   final String? leading;
   final String title;
-  final String? subTitle;
+  final String? subtitle;
   final String? pathString;
   final String source;
   final VoidCallback? tapMe;
@@ -13,7 +13,7 @@ class CustomCard extends StatelessWidget {
     super.key,
     this.leading,
     required this.title,
-    this.subTitle,
+    this.subtitle,
     this.pathString,
     required this.source,
     this.tapMe,
@@ -27,11 +27,11 @@ class CustomCard extends StatelessWidget {
       color: themeData.colorScheme.primary,
       margin: const EdgeInsets.all(12),
       elevation: 10,
-      child: subTitle != null
+      child: subtitle != null
           ? CustomListTileWithSubtitle(
               leading: leading,
               title: title,
-              subTitle: subTitle,
+              subtitle: subtitle,
               pathString: pathString,
               source: source,
               tapMe: tapMe,

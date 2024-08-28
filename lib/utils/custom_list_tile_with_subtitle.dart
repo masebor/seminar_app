@@ -7,16 +7,16 @@ import 'package:seminar_app/utils/custom_image_dialog.dart';
 class CustomListTileWithSubtitle extends StatelessWidget {
   final String? leading;
   final String title;
-  final String? subTitle;
+  final String? subtitle;
   final String source;
   final String? pathString;
   final VoidCallback? tapMe;
   const CustomListTileWithSubtitle(
-      {super.key, this.leading, required this.title, this.subTitle, this.pathString, required this.source, this.tapMe});
+      {super.key, this.leading, required this.title, this.subtitle, this.pathString, required this.source, this.tapMe});
 
   @override
   Widget build(BuildContext context) {
-    final themeData = Theme.of(context); 
+    final themeData = Theme.of(context);
     return ListTile(
       onTap: tapMe,
       onLongPress: () {},
@@ -25,7 +25,7 @@ class CustomListTileWithSubtitle extends StatelessWidget {
         title,
         style: themeData.textTheme.displayLarge,
       ),
-      subtitle: Text(checkIfNullString(subTitle)),
+      subtitle: Text(checkIfNullString(subtitle)),
       trailing: Row(
         mainAxisSize: MainAxisSize.min,
         children: [
@@ -46,10 +46,11 @@ class CustomListTileWithSubtitle extends StatelessWidget {
             tooltip: Strings.sourceAlertSourceLink,
             onPressed: () {
               showDialog(
-                  context: context,
-                  builder: (BuildContext context) {
-                    return AlertdialogSource(source: source);
-                  });
+                context: context,
+                builder: (BuildContext context) {
+                  return AlertdialogSource(source: source);
+                },
+              );
             },
             icon: const Icon(
               Icons.source,

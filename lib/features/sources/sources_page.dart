@@ -35,7 +35,7 @@ class _SourcesPageState extends State<SourcesPage> {
             return CustomCard(
               leading: "[${index.toString()}]",
               title: mySourceList[index].title,
-              subTitle: mySourceList[index].subTitle,
+              subtitle: mySourceList[index].subtitle,
               pathString: mySourceList[index].pathString,
               source: mySourceList[index].source,
               tapMe: mySourceList[index].tapMe,

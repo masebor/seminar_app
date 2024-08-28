@@ -19,7 +19,7 @@ class Strings {
   static const String sourceAlertYes = "Ja";
   static const String sourceAlertSourceLink = "Quellenlink";
   static const String sourceAlertPicture = "Bild";
-  
+
   //Image loading from Url
   static const String imageLoadingError = "Das Bild konnte nicht geladen werden!";
 
@@ -46,11 +46,21 @@ class Strings {
   static const String introLinux = "Linux";
 
   //dart info
-  
+
+  static const String dartInfoTitleAOT = "AOT";
+  static const String dartInfoSubtitleAOT = "Ahead-of-Time compilation";
+  static const String dartInfoTitleJIT = "JIT";
+  static const String dartInfoSubtitleJIT = "Just-in-Time compilation";
+
   //flutter info
   static const String flutterInfoTitleCrossPlatform = "Cross-Platform Developement";
   static const String flutterInfoTitleMVVM = "MVVM";
-  static const String flutterInfoSubTitleMVVM = "Model-View-ViewModel";
+  static const String flutterInfoSubtitleMVVM = "Model-View-ViewModel";
+  static const String flutterInfoTitlePOC= "POC";
+  static const String flutterInfoSubtitlePOC = "Proof of Concept";
+
+  static const String flutterInfoTitleMVP = "MVP";
+  static const String flutterInfoSubtitleMVP = "Minimum Viable Product";
 
   //install page
   static const String howToInstall = "Wie installiere ich Flutter?";
@@ -60,5 +70,5 @@ class Strings {
 
   //conclusion
 
-
+  static const String conclusionTitleProAndCon = "Alles hat vor und Nachteile";
 }

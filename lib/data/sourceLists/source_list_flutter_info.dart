@@ -9,9 +9,19 @@ class SourceListFlutterInfo {
     ),
     const CustomCard(
       title: Strings.flutterInfoTitleMVVM,
-      subTitle: Strings.flutterInfoSubTitleMVVM,
+      subtitle: Strings.flutterInfoSubtitleMVVM,
       source: "https://de.wikipedia.org/wiki/Model_View_ViewModel#",
       pathString: "https://upload.wikimedia.org/wikipedia/commons/8/87/MVVMPattern.png",
+    ),    
+    const CustomCard(
+      title: Strings.flutterInfoTitlePOC,
+      subtitle: Strings.flutterInfoSubtitlePOC,
+      source: "https://de.wikipedia.org/wiki/Proof_of_Concept",
+    ),
+    const CustomCard(
+      title: Strings.flutterInfoTitleMVP,
+      subtitle: Strings.flutterInfoSubtitleMVP,
+      source: "https://de.wikipedia.org/wiki/Minimum_Viable_Product",
     ),
   ];
 }
