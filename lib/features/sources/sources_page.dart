@@ -33,7 +33,7 @@ class _SourcesPageState extends State<SourcesPage> {
           itemCount: mySourceList.length,
           itemBuilder: (context, index) {
             return CustomCard(
-              leading: "[${index.toString()}]",
+              leading: "[${(index + 1).toString()}]",
               title: mySourceList[index].title,
               subtitle: mySourceList[index].subtitle,
               pathString: mySourceList[index].pathString,
