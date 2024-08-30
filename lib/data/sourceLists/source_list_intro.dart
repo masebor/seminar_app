@@ -8,7 +8,6 @@ class SourceListIntro {
     const CustomCard(title: Strings.introIOS, source: "https://docs.flutter.dev/platform-integration/ios/install-ios"),
     const CustomCard(title: Strings.introMacOs, source: "https://docs.flutter.dev/platform-integration/macos/install-macos"),
     const CustomCard(title: Strings.introWindows, source: "https://docs.flutter.dev/platform-integration/windows/install-windows"),
-    const CustomCard(title: Strings.introWeb, source: "https://docs.flutter.dev/platform-integration/linux/install-linux"),
+    const CustomCard(title: Strings.introLinux, source: "https://docs.flutter.dev/platform-integration/linux/install-linux"),
   ];
-
 }
