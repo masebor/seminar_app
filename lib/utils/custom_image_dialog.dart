@@ -11,27 +11,32 @@ class CustomImageDialog extends StatelessWidget {
   Widget build(BuildContext context) {
     final ThemeData themeData = Theme.of(context);
     return Dialog(
-      child: CachedNetworkImage(
-        imageUrl: pathString,
-        fit: BoxFit.fill,
-        placeholder: (context, url) => SizedBox(
-          height: 50.0,
-          width: 50.0,
-          child: Center(
-            child: CircularProgressIndicator(
-              color: themeData.colorScheme.primary,
+      child: InteractiveViewer(
+        boundaryMargin: const EdgeInsets.all(20.0),
+        minScale: 0.5,
+        maxScale: 2.0,
+        child: CachedNetworkImage(
+          imageUrl: pathString,
+          fit: BoxFit.fill,
+          placeholder: (context, url) => SizedBox(
+            height: 50.0,
+            width: 50.0,
+            child: Center(
+              child: CircularProgressIndicator(
+                color: themeData.colorScheme.primary,
+              ),
             ),
           ),
-        ),
-        errorWidget: (context, url, error) => const SizedBox(
-          height: 200,
-          width: 200,
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Icon(Icons.error),
-              Text(Strings.imageLoadingError),
-            ],
+          errorWidget: (context, url, error) => const SizedBox(
+            height: 200,
+            width: 200,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Icon(Icons.error),
+                Text(Strings.imageLoadingError),
+              ],
+            ),
           ),
         ),
       ),

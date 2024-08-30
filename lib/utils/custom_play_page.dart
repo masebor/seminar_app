@@ -1,14 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:seminar_app/constants/strings.dart';
+import 'package:seminar_app/utils/custom_play_card.dart';
 
 class CustomPlayPage extends StatelessWidget {
   final String appBartitle;
   final String content;
+  final String? contentTwo;
+  final String? contentThree;
 
   const CustomPlayPage({
     super.key,
     required this.appBartitle,
     required this.content,
+    this.contentTwo,
+    this.contentThree,
   });
 
   @override
@@ -28,30 +32,13 @@ class CustomPlayPage extends StatelessWidget {
           padding: const EdgeInsets.all(28.0),
           child: SizedBox(
             width: screenWidth * 0.7,
-            height: screenHeight* 0.4,
-            child: Card(
-              color: themeData.colorScheme.primary,
-              margin: const EdgeInsets.all(12),
-              elevation: 10,
-              child: Center(
-                child: ListTile(
-                  leading: IconButton(
-                    tooltip: Strings.playVideo,
-                    onPressed: () {                      
-                      Navigator.of(context).pushNamed("/empty_loading");
-                    },
-                    icon: const Icon(
-                      Icons.play_arrow,
-                    ),
-                  ),
-                  title: Text(
-                    content,
-                    style: themeData.textTheme.displayLarge,
-                    textAlign: TextAlign.center,
-                  ),
-                  textColor: themeData.colorScheme.onPrimary,
-                ),
-              ),
+            height: screenHeight * 0.4,
+            child: Column(
+              children: [
+                CustomPlayCard(content: content),
+                contentTwo != null ? CustomPlayCard(content: contentTwo.toString()) : Container(),
+                contentThree != null ? CustomPlayCard(content: contentThree.toString()) : Container(),
+              ],
             ),
           ),
         ),

@@ -52,6 +52,7 @@ class Strings {
 
   //dart info
 
+  static const String dartInfoTitleNative = "Dart Native";
   static const String dartInfoTitleAOT = "AOT";
   static const String dartInfoSubtitleAOT = "Ahead-of-Time compilation";
   static const String dartInfoTitleJIT = "JIT";
@@ -59,7 +60,7 @@ class Strings {
   static const String dartInfoTitleWeb = "Dart Web";
   static const String dartInfoSubtitleWeb = "JavaScript/WebAssembly";
   static const String dartInfoTitleNullSafety = "Type Safety";
-  static const String dartInfoSubtitleNullSafety = "Sound null safety (since Dart 3)";
+  static const String dartInfoSubtitleNullSafety = "Sound null safety";
   static const String dartInfoTitleVersatility = "Versatility";
   static const String dartInfoSubtitleVersatility = "Front/Backend";
 
@@ -81,7 +82,9 @@ class Strings {
   static const String howToInstall = "How to install flutter?";
 
   //app building page
-  static const String howToBuildApp = "Flutter Basics";
+  static const String playPageContent = "Flutter Basics";
+  static const String playPageContentTwo = "Getting to know state";
+  static const String playPageContentThree = "Have a look in my App";
 
   //conclusion
   static const String conclusionTitleProAndCon = "Everything has Pro's and Con's";
