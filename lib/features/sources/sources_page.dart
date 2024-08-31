@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:seminar_app/data/sourceLists/source_list_conclusion.dart';
 import 'package:seminar_app/data/sourceLists/source_list_dart_info.dart';
 import 'package:seminar_app/data/sourceLists/source_list_flutter_info.dart';
+import 'package:seminar_app/data/sourceLists/source_list_install_and_app.dart';
 import 'package:seminar_app/data/sourceLists/source_list_intro.dart';
 import 'package:seminar_app/utils/custom_card.dart';
 
@@ -17,6 +18,7 @@ class _SourcesPageState extends State<SourcesPage> {
     ...SourceListIntro.sourceListIntro,
     ...SourceListFlutterInfo.sourceListFlutterInfo,
     ...SourceListDartInfo.sourceListDartInfo,
+    ...SourceListInstallAndApp.sourceListInstallAndApp,
     ...SourceListConclusion.sourceListConclusion,
   ];
 
