@@ -52,6 +52,7 @@ class Strings {
 
   //dart info
 
+  static const String dartInfoTitleHistory = "History of Dart";
   static const String dartInfoTitleNative = "Dart Native";
   static const String dartInfoTitleAOT = "AOT";
   static const String dartInfoSubtitleAOT = "Ahead-of-Time compilation";
@@ -65,11 +66,14 @@ class Strings {
   static const String dartInfoSubtitleVersatility = "Front/Backend";
 
   //flutter info
+  static const String flutterInfoTitleHistory = "History of Flutter";
+  static const String flutterInfoTitleShowcase = "Showcase";
   static const String flutterInfoTitleEverythingIsWidget = "Everything is a widget!!!";
   static const String flutterInfoTitleCrossPlatform = "Cross-Platform Development";
+  static const String flutterInfoTitlePlatformAdaptations = "Platform Adaptations";
   static const String flutterInfoTitleDeclaratively = "Declarative";
+  static const String flutterInfoSubtitleDeclaratively = "UI = f(state)";
   static const String flutterInfoTitleReactive = "Reactive";
-  static const String flutterInfoSubtitleReactive = "UI = f(state)";
   static const String flutterInfoTitleMVVM = "MVVM";
   static const String flutterInfoSubtitleMVVM = "Model-View-ViewModel";
   static const String flutterInfoTitlePOC = "POC";

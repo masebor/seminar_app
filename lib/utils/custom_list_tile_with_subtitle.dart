@@ -31,7 +31,7 @@ class CustomListTileWithSubtitle extends StatelessWidget {
         children: [
           pathString != null
               ? IconButton(
-                  tooltip: Strings.sourceAlertImage,
+                  tooltip: pathString,
                   onPressed: () async {
                     await showDialog(
                       context: context,
